@@ -1,8 +1,10 @@
-ARG BASE_CONTAINER=quay.io/jupyter/r-notebook:hub-5.4.0
+ARG BASE_CONTAINER=quay.io/jupyter/r-notebook:hub-5.4.3
 # Based on docker-stacks images at https://github.com/jupyter/docker-stacks/blob/main/images/r-notebook/Dockerfile
 # Ubuntu 24.04 (noble)
 
 FROM $BASE_CONTAINER
+
+LABEL maintainer="Wing-Ho Ko <wingho@uw.edu>"
 
 # install rstudio-server
 USER root
