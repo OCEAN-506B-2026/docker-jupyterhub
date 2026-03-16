@@ -41,3 +41,4 @@ r-lme4
 r-nlme
 r-mgcv
 r-vgam
+r-palmerpenguins

@@ -2180,7 +2180,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |abind|1.4-8|
 |alabama|2025.1.0|
 |anocva|0.1.1|
-|arm|1.15-1
+|arm|1.15-1|
 |askpass|1.2.1|
 |assertthat|0.2.1|
 |backports|1.5.0|
@@ -2368,6 +2368,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |nycflights13|1.0.2|
 |openssl|2.3.5|
 |otel|0.2.0|
+|palmerpenguins|0.1.1|
 |parallel|4.5.3|
 |parallelly|1.46.1|
 |parameters|0.28.3|
