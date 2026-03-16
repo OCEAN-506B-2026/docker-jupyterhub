@@ -1,0 +1,43 @@
+# rttl-notebooks basics
+conda-tree
+requests
+jupyter-resource-usage
+nodejs>=20
+# openGL requirements
+libgl
+libglu
+freeglut
+xorg-libxext
+xorg-libx11
+xorg-libxi
+xorg-libxmu
+xorg-libxrender
+xorg-libxfixes
+# r packages
+gdal
+r-base
+r-essentials
+r-devtools
+r-tidyverse
+r-patchwork
+r-janitor
+r-rmarkdown
+r-knitr
+r-writexl
+r-svglite
+r-rgl
+r-pkgdown
+r-boot
+r-car
+r-cardata
+r-pwr
+r-effectsize
+r-vegan
+r-umap
+r-ggdendro
+r-lmtest
+r-statmod
+r-lme4
+r-nlme
+r-mgcv
+r-vgam
