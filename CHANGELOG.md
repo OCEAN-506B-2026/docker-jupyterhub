@@ -1,4 +1,4 @@
-# RTTL Jupyter RStudio notebook image
+# OCEAN 506 B RStudio notebook image
 
 All notable changes to the OCEAN 506B Jupyter Notebook image will be documented here. 
 
