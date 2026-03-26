@@ -11,7 +11,7 @@ Docker image for RStudio notebook using jupyter-rsession-proxy to handle auth fl
 
 ## Building the docker image
 
-To build the docker image from this repo. Use `docker buildx build --provenance=false --platform linux/amd64 --no-cache -t <repo-name>/<user-name>/ocean506b:v0.10.3 .`
+To build the docker image from this repo. Use `docker buildx build --provenance=false --platform linux/amd64 --no-cache -t <repo-name>/<user-name>/ocean506b:v0.10.4 .`
 
 ## About packages
 
@@ -31,11 +31,11 @@ conda-libmamba-solver==25.11.0
 ├── conda [required: >=25.9, installed: 26.1.1]
 │   ├── archspec [required: >=0.2.3, installed: 0.2.5]
 │   ├── boltons [required: >=23.0.0, installed: 25.0.0]
-│   ├── charset-normalizer [required: Any, installed: 3.4.5]
+│   ├── charset-normalizer [required: Any, installed: 3.4.6]
 │   ├── conda-package-handling [required: >=2.2.0, installed: 2.4.0]
 │   │   └── conda_package_streaming [required: >=0.9.0, installed: 0.12.0]
 │   │       ├── requests [required: Any, installed: 2.32.5]
-│   │       │   ├── charset-normalizer [required: >=2,<4, installed: 3.4.5]
+│   │       │   ├── charset-normalizer [required: >=2,<4, installed: 3.4.6]
 │   │       │   ├── idna [required: >=2.5,<4, installed: 3.11]
 │   │       │   ├── urllib3 [required: >=1.21.1,<3, installed: 2.6.3]
 │   │       │   └── certifi [required: >=2017.4.17, installed: 2026.2.25]
@@ -43,14 +43,14 @@ conda-libmamba-solver==25.11.0
 │   ├── distro [required: >=1.5.0, installed: 1.9.0]
 │   ├── frozendict [required: >=2.4.2, installed: 2.4.7]
 │   ├── jsonpatch [required: >=1.32, installed: 1.33]
-│   │   └── jsonpointer [required: >=1.9, installed: 3.0.0]
+│   │   └── jsonpointer [required: >=1.9, installed: 3.1.0]
 │   ├── menuinst [required: >=2, installed: 2.4.2]
 │   ├── packaging [required: >=23.0, installed: 26.0]
 │   ├── platformdirs [required: >=3.10.0, installed: 4.9.4]
 │   ├── pluggy [required: >=1.0.0, installed: 1.6.0]
 │   ├── pycosat [required: >=0.6.3, installed: 0.6.6]
 │   ├── requests [required: >=2.28.0,<3, installed: 2.32.5]
-│   │   ├── charset-normalizer [required: >=2,<4, installed: 3.4.5]
+│   │   ├── charset-normalizer [required: >=2,<4, installed: 3.4.6]
 │   │   ├── idna [required: >=2.5,<4, installed: 3.11]
 │   │   ├── urllib3 [required: >=1.21.1,<3, installed: 2.6.3]
 │   │   └── certifi [required: >=2017.4.17, installed: 2026.2.25]
@@ -62,7 +62,7 @@ conda-libmamba-solver==25.11.0
 │   └── zstandard [required: >=0.15, installed: 0.25.0]
 ├── msgpack [required: >=1.1.1, installed: 1.1.2]
 ├── requests [required: >=2.28.0,<3, installed: 2.32.5]
-│   ├── charset-normalizer [required: >=2,<4, installed: 3.4.5]
+│   ├── charset-normalizer [required: >=2,<4, installed: 3.4.6]
 │   ├── idna [required: >=2.5,<4, installed: 3.11]
 │   ├── urllib3 [required: >=1.21.1,<3, installed: 2.6.3]
 │   └── certifi [required: >=2017.4.17, installed: 2026.2.25]
@@ -72,11 +72,11 @@ conda-tree==1.1.2
 └── colorama [required: Any, installed: 0.4.6]
 exceptiongroup==1.3.1
 fqdn==1.5.1
-GDAL==3.12.2
+GDAL==3.12.3
 h2==4.3.0
 ├── hyperframe [required: >=6.1,<7, installed: 6.1.0]
 └── hpack [required: >=4.1,<5, installed: 4.1.0]
-importlib_metadata==8.7.0
+importlib_metadata==8.8.0
 └── zipp [required: >=3.20, installed: 3.23.0]
 importlib_resources==6.5.2
 isoduration==20.11.0
@@ -108,20 +108,20 @@ jupyter-resource-usage==1.2.0
 │   │   └── traitlets [required: >=5.3, installed: 5.14.3]
 │   ├── jupyter-events [required: >=0.11.0, installed: 0.12.0]
 │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   ├── packaging [required: Any, installed: 26.0]
 │   │   ├── python-json-logger [required: >=2.0.4, installed: 2.0.7]
 │   │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
 │   │   ├── referencing [required: Any, installed: 0.37.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │   │   └── six [required: Any, installed: 1.17.0]
@@ -162,13 +162,13 @@ jupyter-resource-usage==1.2.0
 │   │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
 │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -179,13 +179,13 @@ jupyter-resource-usage==1.2.0
 │   │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -199,13 +199,13 @@ jupyter-resource-usage==1.2.0
 │   ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -231,7 +231,7 @@ jupyter-rsession-proxy==2.4.0
     │   ├── aiohappyeyeballs [required: >=2.5.0, installed: 2.6.1]
     │   ├── aiosignal [required: >=1.4.0, installed: 1.4.0]
     │   │   └── frozenlist [required: >=1.1.0, installed: 1.8.0]
-    │   ├── attrs [required: >=17.3.0, installed: 25.4.0]
+    │   ├── attrs [required: >=17.3.0, installed: 26.1.0]
     │   ├── frozenlist [required: >=1.1.1, installed: 1.8.0]
     │   ├── multidict [required: >=4.5,<7.0, installed: 6.7.1]
     │   ├── propcache [required: >=0.2.0, installed: 0.4.1]
@@ -262,20 +262,20 @@ jupyter-rsession-proxy==2.4.0
     │   │   └── traitlets [required: >=5.3, installed: 5.14.3]
     │   ├── jupyter-events [required: >=0.11.0, installed: 0.12.0]
     │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
-    │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+    │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
     │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-    │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+    │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
     │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-    │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+    │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
     │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
     │   │   ├── packaging [required: Any, installed: 26.0]
     │   │   ├── python-json-logger [required: >=2.0.4, installed: 2.0.7]
     │   │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
     │   │   ├── referencing [required: Any, installed: 0.37.0]
-    │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+    │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
     │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
     │   │   │   └── six [required: Any, installed: 1.17.0]
@@ -316,13 +316,13 @@ jupyter-rsession-proxy==2.4.0
     │   │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
     │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
     │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-    │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+    │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
     │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-    │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+    │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
     │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-    │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+    │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
     │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
     │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -333,13 +333,13 @@ jupyter-rsession-proxy==2.4.0
     │   │   ├── nbformat [required: >=5.7, installed: 5.10.4]
     │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
     │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-    │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+    │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
     │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-    │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+    │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
     │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-    │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+    │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
     │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
     │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -353,13 +353,13 @@ jupyter-rsession-proxy==2.4.0
     │   ├── nbformat [required: >=5.3.0, installed: 5.10.4]
     │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
     │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-    │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+    │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
     │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-    │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+    │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
     │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-    │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+    │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
     │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
     │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -396,20 +396,20 @@ jupyterhub==5.4.3
 │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
 ├── jupyter-events [required: Any, installed: 0.12.0]
 │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
-│   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   ├── packaging [required: Any, installed: 26.0]
 │   ├── python-json-logger [required: >=2.0.4, installed: 2.0.7]
 │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
 │   ├── referencing [required: Any, installed: 0.37.0]
-│   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │   └── six [required: Any, installed: 1.17.0]
@@ -429,7 +429,7 @@ jupyterhub==5.4.3
 ├── python-dateutil [required: Any, installed: 2.9.0.post0]
 │   └── six [required: >=1.5, installed: 1.17.0]
 ├── requests [required: Any, installed: 2.32.5]
-│   ├── charset-normalizer [required: >=2,<4, installed: 3.4.5]
+│   ├── charset-normalizer [required: >=2,<4, installed: 3.4.6]
 │   ├── idna [required: >=2.5,<4, installed: 3.11]
 │   ├── urllib3 [required: >=1.21.1,<3, installed: 2.6.3]
 │   └── certifi [required: >=2017.4.17, installed: 2026.2.25]
@@ -463,20 +463,20 @@ jupyterlab_git==0.52.0
 │   │   └── traitlets [required: >=5.3, installed: 5.14.3]
 │   ├── jupyter-events [required: >=0.11.0, installed: 0.12.0]
 │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   ├── packaging [required: Any, installed: 26.0]
 │   │   ├── python-json-logger [required: >=2.0.4, installed: 2.0.7]
 │   │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
 │   │   ├── referencing [required: Any, installed: 0.37.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │   │   └── six [required: Any, installed: 1.17.0]
@@ -517,13 +517,13 @@ jupyterlab_git==0.52.0
 │   │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
 │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -534,13 +534,13 @@ jupyterlab_git==0.52.0
 │   │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -554,13 +554,13 @@ jupyterlab_git==0.52.0
 │   ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -607,20 +607,20 @@ jupyterlab_git==0.52.0
 │   │   │   └── traitlets [required: >=5.3, installed: 5.14.3]
 │   │   ├── jupyter-events [required: >=0.11.0, installed: 0.12.0]
 │   │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   ├── packaging [required: Any, installed: 26.0]
 │   │   │   ├── python-json-logger [required: >=2.0.4, installed: 2.0.7]
 │   │   │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
 │   │   │   ├── referencing [required: Any, installed: 0.37.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │   │   │   └── six [required: Any, installed: 1.17.0]
@@ -661,13 +661,13 @@ jupyterlab_git==0.52.0
 │   │   │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
 │   │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -678,13 +678,13 @@ jupyterlab_git==0.52.0
 │   │   │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -698,13 +698,13 @@ jupyterlab_git==0.52.0
 │   │   ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -724,13 +724,13 @@ jupyterlab_git==0.52.0
 │   ├── nbformat [required: Any, installed: 5.10.4]
 │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -739,7 +739,7 @@ jupyterlab_git==0.52.0
 │   │   └── traitlets [required: >=5.1, installed: 5.14.3]
 │   ├── Pygments [required: Any, installed: 2.19.2]
 │   ├── requests [required: Any, installed: 2.32.5]
-│   │   ├── charset-normalizer [required: >=2,<4, installed: 3.4.5]
+│   │   ├── charset-normalizer [required: >=2,<4, installed: 3.4.6]
 │   │   ├── idna [required: >=2.5,<4, installed: 3.11]
 │   │   ├── urllib3 [required: >=1.21.1,<3, installed: 2.6.3]
 │   │   └── certifi [required: >=2017.4.17, installed: 2026.2.25]
@@ -747,13 +747,13 @@ jupyterlab_git==0.52.0
 ├── nbformat [required: Any, installed: 5.10.4]
 │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -833,20 +833,20 @@ nbclassic==1.3.3
         │   └── traitlets [required: >=5.3, installed: 5.14.3]
         ├── jupyter-events [required: >=0.11.0, installed: 0.12.0]
         │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
-        │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+        │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
         │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-        │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+        │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
         │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-        │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+        │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
         │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
         │   ├── packaging [required: Any, installed: 26.0]
         │   ├── python-json-logger [required: >=2.0.4, installed: 2.0.7]
         │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
         │   ├── referencing [required: Any, installed: 0.37.0]
-        │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+        │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
         │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
         │   │   └── six [required: Any, installed: 1.17.0]
@@ -887,13 +887,13 @@ nbclassic==1.3.3
         │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
         │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
         │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-        │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+        │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
         │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-        │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+        │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
         │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-        │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+        │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
         │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
         │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -904,13 +904,13 @@ nbclassic==1.3.3
         │   ├── nbformat [required: >=5.7, installed: 5.10.4]
         │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
         │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-        │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+        │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
         │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-        │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+        │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
         │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-        │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+        │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
         │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
         │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -924,13 +924,13 @@ nbclassic==1.3.3
         ├── nbformat [required: >=5.3.0, installed: 5.10.4]
         │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
         │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-        │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+        │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
         │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-        │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+        │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
         │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-        │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+        │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
         │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
         │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -971,20 +971,20 @@ nbgitpuller==1.2.2
 │   │   └── traitlets [required: >=5.3, installed: 5.14.3]
 │   ├── jupyter-events [required: >=0.11.0, installed: 0.12.0]
 │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   ├── packaging [required: Any, installed: 26.0]
 │   │   ├── python-json-logger [required: >=2.0.4, installed: 2.0.7]
 │   │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
 │   │   ├── referencing [required: Any, installed: 0.37.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │   │   └── six [required: Any, installed: 1.17.0]
@@ -1025,13 +1025,13 @@ nbgitpuller==1.2.2
 │   │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
 │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1042,13 +1042,13 @@ nbgitpuller==1.2.2
 │   │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1062,13 +1062,13 @@ nbgitpuller==1.2.2
 │   ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1111,20 +1111,20 @@ notebook==7.5.5
 │   │   └── traitlets [required: >=5.3, installed: 5.14.3]
 │   ├── jupyter-events [required: >=0.11.0, installed: 0.12.0]
 │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   ├── packaging [required: Any, installed: 26.0]
 │   │   ├── python-json-logger [required: >=2.0.4, installed: 2.0.7]
 │   │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
 │   │   ├── referencing [required: Any, installed: 0.37.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │   │   └── six [required: Any, installed: 1.17.0]
@@ -1165,13 +1165,13 @@ notebook==7.5.5
 │   │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
 │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1182,13 +1182,13 @@ notebook==7.5.5
 │   │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1202,13 +1202,13 @@ notebook==7.5.5
 │   ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1231,13 +1231,13 @@ notebook==7.5.5
 │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   ├── json5 [required: >=0.9.0, installed: 0.13.0]
 │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
-│   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   ├── jupyter_server [required: >=1.21,<3, installed: 2.17.0]
@@ -1263,20 +1263,20 @@ notebook==7.5.5
 │   │   │   └── traitlets [required: >=5.3, installed: 5.14.3]
 │   │   ├── jupyter-events [required: >=0.11.0, installed: 0.12.0]
 │   │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   ├── packaging [required: Any, installed: 26.0]
 │   │   │   ├── python-json-logger [required: >=2.0.4, installed: 2.0.7]
 │   │   │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
 │   │   │   ├── referencing [required: Any, installed: 0.37.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │   │   │   └── six [required: Any, installed: 1.17.0]
@@ -1317,13 +1317,13 @@ notebook==7.5.5
 │   │   │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
 │   │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1334,13 +1334,13 @@ notebook==7.5.5
 │   │   │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1354,13 +1354,13 @@ notebook==7.5.5
 │   │   ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1379,12 +1379,12 @@ notebook==7.5.5
 │   │   └── websocket-client [required: >=1.7, installed: 1.9.0]
 │   ├── packaging [required: >=21.3, installed: 26.0]
 │   └── requests [required: >=2.31, installed: 2.32.5]
-│       ├── charset-normalizer [required: >=2,<4, installed: 3.4.5]
+│       ├── charset-normalizer [required: >=2,<4, installed: 3.4.6]
 │       ├── idna [required: >=2.5,<4, installed: 3.11]
 │       ├── urllib3 [required: >=1.21.1,<3, installed: 2.6.3]
 │       └── certifi [required: >=2017.4.17, installed: 2026.2.25]
 ├── jupyterlab [required: >=4.5.6,<4.6, installed: 4.5.6]
-│   ├── async-lru [required: >=1.0.0, installed: 2.2.0]
+│   ├── async-lru [required: >=1.0.0, installed: 2.3.0]
 │   ├── httpx [required: >=0.25.0,<1, installed: 0.28.1]
 │   │   ├── anyio [required: Any, installed: 4.12.1]
 │   │   │   └── idna [required: >=2.8, installed: 3.11]
@@ -1463,20 +1463,20 @@ notebook==7.5.5
 │   │       │   └── traitlets [required: >=5.3, installed: 5.14.3]
 │   │       ├── jupyter-events [required: >=0.11.0, installed: 0.12.0]
 │   │       │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
-│   │       │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │       │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │       │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │       │   ├── packaging [required: Any, installed: 26.0]
 │   │       │   ├── python-json-logger [required: >=2.0.4, installed: 2.0.7]
 │   │       │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
 │   │       │   ├── referencing [required: Any, installed: 0.37.0]
-│   │       │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │       │   │   └── six [required: Any, installed: 1.17.0]
@@ -1517,13 +1517,13 @@ notebook==7.5.5
 │   │       │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
 │   │       │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │       │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │       │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │       │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │       │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │       │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1534,13 +1534,13 @@ notebook==7.5.5
 │   │       │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │       │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │       │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │       │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │       │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │       │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1554,13 +1554,13 @@ notebook==7.5.5
 │   │       ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │       │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │       │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │       │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │       │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │       │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │       │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1600,20 +1600,20 @@ notebook==7.5.5
 │   │   │   └── traitlets [required: >=5.3, installed: 5.14.3]
 │   │   ├── jupyter-events [required: >=0.11.0, installed: 0.12.0]
 │   │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   ├── packaging [required: Any, installed: 26.0]
 │   │   │   ├── python-json-logger [required: >=2.0.4, installed: 2.0.7]
 │   │   │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
 │   │   │   ├── referencing [required: Any, installed: 0.37.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │   │   │   └── six [required: Any, installed: 1.17.0]
@@ -1654,13 +1654,13 @@ notebook==7.5.5
 │   │   │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
 │   │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1671,13 +1671,13 @@ notebook==7.5.5
 │   │   │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1691,13 +1691,13 @@ notebook==7.5.5
 │   │   ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1720,13 +1720,13 @@ notebook==7.5.5
 │   │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   │   ├── json5 [required: >=0.9.0, installed: 0.13.0]
 │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
-│   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   ├── jupyter_server [required: >=1.21,<3, installed: 2.17.0]
@@ -1752,20 +1752,20 @@ notebook==7.5.5
 │   │   │   │   └── traitlets [required: >=5.3, installed: 5.14.3]
 │   │   │   ├── jupyter-events [required: >=0.11.0, installed: 0.12.0]
 │   │   │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   │   ├── packaging [required: Any, installed: 26.0]
 │   │   │   │   ├── python-json-logger [required: >=2.0.4, installed: 2.0.7]
 │   │   │   │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
 │   │   │   │   ├── referencing [required: Any, installed: 0.37.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
@@ -1806,13 +1806,13 @@ notebook==7.5.5
 │   │   │   │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
 │   │   │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1823,13 +1823,13 @@ notebook==7.5.5
 │   │   │   │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1843,13 +1843,13 @@ notebook==7.5.5
 │   │   │   ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1868,7 +1868,7 @@ notebook==7.5.5
 │   │   │   └── websocket-client [required: >=1.7, installed: 1.9.0]
 │   │   ├── packaging [required: >=21.3, installed: 26.0]
 │   │   └── requests [required: >=2.31, installed: 2.32.5]
-│   │       ├── charset-normalizer [required: >=2,<4, installed: 3.4.5]
+│   │       ├── charset-normalizer [required: >=2,<4, installed: 3.4.6]
 │   │       ├── idna [required: >=2.5,<4, installed: 3.11]
 │   │       ├── urllib3 [required: >=1.21.1,<3, installed: 2.6.3]
 │   │       └── certifi [required: >=2017.4.17, installed: 2026.2.25]
@@ -1896,20 +1896,20 @@ notebook==7.5.5
 │   │       │   └── traitlets [required: >=5.3, installed: 5.14.3]
 │   │       ├── jupyter-events [required: >=0.11.0, installed: 0.12.0]
 │   │       │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
-│   │       │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │       │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │       │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │       │   ├── packaging [required: Any, installed: 26.0]
 │   │       │   ├── python-json-logger [required: >=2.0.4, installed: 2.0.7]
 │   │       │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
 │   │       │   ├── referencing [required: Any, installed: 0.37.0]
-│   │       │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │       │   │   └── six [required: Any, installed: 1.17.0]
@@ -1950,13 +1950,13 @@ notebook==7.5.5
 │   │       │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
 │   │       │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │       │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │       │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │       │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │       │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │       │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1967,13 +1967,13 @@ notebook==7.5.5
 │   │       │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │       │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │       │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │       │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │       │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │       │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -1987,13 +1987,13 @@ notebook==7.5.5
 │   │       ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │       │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │       │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│   │       │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │       │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│   │       │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │   │       │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │   │       │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -2038,20 +2038,20 @@ notebook==7.5.5
 │       │   └── traitlets [required: >=5.3, installed: 5.14.3]
 │       ├── jupyter-events [required: >=0.11.0, installed: 0.12.0]
 │       │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
-│       │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│       │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │       │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│       │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│       │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │       │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│       │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │       │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │       │   ├── packaging [required: Any, installed: 26.0]
 │       │   ├── python-json-logger [required: >=2.0.4, installed: 2.0.7]
 │       │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
 │       │   ├── referencing [required: Any, installed: 0.37.0]
-│       │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│       │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │       │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │       │   │   └── six [required: Any, installed: 1.17.0]
@@ -2092,13 +2092,13 @@ notebook==7.5.5
 │       │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
 │       │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │       │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │       │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│       │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│       │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │       │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│       │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│       │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │       │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │       │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -2109,13 +2109,13 @@ notebook==7.5.5
 │       │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │       │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │       │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│       │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │       │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│       │   │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│       │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │       │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │       │   │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │       │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -2129,13 +2129,13 @@ notebook==7.5.5
 │       ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │       │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │       │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
-│       │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│       │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │       │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
-│       │   │   │       ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│       │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   │       └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │       │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
-│       │   │   │   ├── attrs [required: >=22.2.0, installed: 25.4.0]
+│       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   │   └── rpds-py [required: >=0.7.0, installed: 0.30.0]
 │       │   │   └── rpds-py [required: >=0.25.0, installed: 0.30.0]
 │       │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
@@ -2153,11 +2153,11 @@ notebook==7.5.5
 │       ├── traitlets [required: >=5.6.0, installed: 5.14.3]
 │       └── websocket-client [required: >=1.7, installed: 1.9.0]
 └── tornado [required: >=6.2.0, installed: 6.5.4]
-numpy==2.4.2
+numpy==2.4.3
 overrides==7.7.0
-pipdeptree==2.31.0
-├── packaging [required: >=26, installed: 26.0]
-└── pip [required: >=25.2, installed: 26.0.1]
+pip==26.0.1
+pipdeptree==2.34.0
+└── packaging [required: >=26, installed: 26.0]
 PyJWT==2.12.1
 PySocks==1.7.1
 rfc3987-syntax==1.1.0
@@ -2180,7 +2180,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |abind|1.4-8|
 |alabama|2025.1.0|
 |anocva|0.1.1|
-|arm|1.15-1|
+|arm|1.15-2|
 |askpass|1.2.1|
 |assertthat|0.2.1|
 |backports|1.5.0|
@@ -2206,6 +2206,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |ciTools|0.6.1|
 |class|7.3-23|
 |cli|3.6.5|
+|cliapp|0.1.2|
 |clipr|0.8.0|
 |clock|0.7.4|
 |cluster|2.1.8.2|
@@ -2218,10 +2219,12 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |conflicted|1.2.0|
 |conquer|1.3.3|
 |corpcor|1.6.10|
+|corrplot|0.95|
 |cowplot|1.2.0|
 |cpp11|0.5.3|
 |crayon|1.5.3|
 |credentials|2.0.3|
+|crosstalk|1.2.2|
 |crul|1.6.0|
 |curl|7.0.0|
 |data.table|1.17.8|
@@ -2229,39 +2232,49 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |datawizard|1.3.0|
 |DBI|1.3.0|
 |dbplyr|2.5.2|
+|dbscan|1.2.4|
+|dendextend|1.19.1|
 |Deriv|4.2.0|
 |desc|1.4.3|
-|devtools|2.4.6|
+|devtools|2.5.0|
 |diagonals|6.4.0|
 |diagram|1.6.5|
 |dials|1.4.2|
 |DiceDesign|1.10|
 |diffobj|0.3.6|
 |digest|0.6.39|
-|distributional|0.6.0|
+|distributional|0.7.0|
 |doBy|4.7.1|
 |doParallel|1.0.17|
 |downlit|0.4.5|
 |dplyr|1.2.0|
+|DT|0.34.0|
 |dtplyr|1.3.3|
 |e1071|1.7-17|
 |ecotox|1.4.4|
 |effectsize|1.0.2|
+|ellipse|0.5.0|
 |ellipsis|0.3.2|
+|emmeans|2.0.2|
+|estimability|1.5.1|
 |evaluate|1.0.5|
 |expm|1.0-0|
+|factoextra|2.0.0|
+|FactoMineR|2.13|
 |fansi|1.0.7|
 |farver|2.1.2|
 |fastmap|1.2.0|
+|filelock|1.0.3|
+|flashClust|1.1-4|
 |fontawesome|0.5.3|
 |forcats|1.0.1|
 |foreach|1.5.2|
-|forecast|9.0.1|
+|forecast|9.0.2|
 |foreign|0.8-91|
 |formatR|1.14|
 |Formula|1.2-5|
 |fracdiff|1.5-3|
-|fs|1.6.6|
+|fs|1.6.7|
 |furrr|0.3.1|
 |future|1.70.0|
 |future.apply|1.20.2|
@@ -2274,7 +2287,10 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |ggdist|3.3.3|
 |ggokabeito|0.1.0|
 |ggplot2|4.0.2|
-|ggrepel|0.9.7|
+|ggpubr|0.6.3|
+|ggrepel|0.9.6|
+|ggsci|4.2.0|
+|ggsignif|0.6.4|
 |gh|1.5.0|
 |gistr|0.9.0|
 |gitcreds|0.1.2|
@@ -2301,7 +2317,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |htmltools|0.5.9|
 |htmlwidgets|1.6.4|
 |httpcode|0.3.0|
-|httpuv|1.6.16|
+|httpuv|1.6.17|
 |httr|1.4.8|
 |httr2|1.2.2|
 |ids|1.0.1|
@@ -2324,6 +2340,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |lava|1.8.2|
 |lavaan|0.6-21|
 |lazyeval|0.2.2|
+|leaps|3.2|
 |lhs|1.2.1|
 |lifecycle|1.0.5|
 |listenv|0.10.1|
@@ -2331,6 +2348,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |lmeresampler|0.2.4|
 |lmtest|0.9-40|
 |lobstr|1.2.0|
+|lpSolve|5.6.23|
 |lubridate|1.9.5|
 |magrittr|2.0.4|
 |maps|3.4.3|
@@ -2354,6 +2372,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |ModelMetrics|1.2.2.2|
 |modelr|0.1.11|
 |msm|1.8.2|
+|multcompView|0.1-11|
 |munsell|0.5.1|
 |mvnfast|0.2.8|
 |mvtnorm|1.3-6|
@@ -2368,6 +2387,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |nycflights13|1.0.2|
 |openssl|2.3.5|
 |otel|0.2.0|
+|pak|0.9.2|
 |palmerpenguins|0.1.1|
 |parallel|4.5.3|
 |parallelly|1.46.1|
@@ -2381,13 +2401,16 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |permute|0.9-10|
 |pillar|1.11.1|
 |pkgbuild|1.4.8|
+|pkgcache|2.2.4|
 |pkgconfig|2.0.3|
 |pkgdown|2.2.0|
 |pkgload|1.5.0|
 |plogr|0.2.0|
 |plyr|1.8.9|
-|png|0.1-8|
+|png|0.1-9|
+|polynom|1.4-1|
 |praise|1.0.0|
+|prettycode|1.1.0|
 |prettyunits|1.2.0|
 |pROC|1.19.0.1|
 |processx|3.8.6|
@@ -2405,7 +2428,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |quantmod|0.4.28|
 |quantreg|6.1|
 |R6|2.6.1|
-|ragg|1.5.1|
+|ragg|1.5.2|
 |randomForest|4.7-1.2|
 |rappdirs|0.3.4|
 |rbibutils|2.4.1|
@@ -2413,10 +2436,10 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |rcmdcheck|1.4.0|
 |RColorBrewer|1.1-3|
 |Rcpp|1.1.1|
-|RcppArmadillo|15.2.3-1|
+|RcppArmadillo|15.2.4-1|
 |RcppEigen|0.3.4.0.2|
 |RcppTOML|0.2.3|
-|RCurl|1.98-1.17|
+|RCurl|1.98-1.18|
 |Rdpack|2.6.6|
 |readr|2.2.0|
 |readxl|1.4.5|
@@ -2439,6 +2462,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |rsample|1.3.2|
 |RSpectra|0.16-2|
 |RSQLite|2.4.6|
+|rstatix|0.7.3|
 |rstudioapi|0.18.0|
 |rversions|3.0.0|
 |rvest|1.0.5|
@@ -2447,6 +2471,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |sandwich|3.1-1|
 |sass|0.4.10|
 |scales|1.4.0|
+|scatterplot3d|0.3-45|
 |selectr|0.5-1|
 |sessioninfo|1.2.3|
 |sfd|0.1.0|
@@ -2459,7 +2484,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |sparsevctrs|0.3.6|
 |spatial|7.3-18|
 |splines|4.5.3|
-|SQUAREM|2021.1|
+|SQUAREM|2026.1|
 |statmod|1.5.1|
 |stats|4.5.3|
 |stats4|4.5.3|
@@ -2497,9 +2522,10 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |utils|4.5.3|
 |uuid|1.2-2|
 |varTestnlme|1.3.5|
-|vctrs|0.7.1|
+|vctrs|0.7.2|
 |vegan|2.7-3|
 |VGAM|1.1-14|
+|viridis|0.6.5|
 |viridisLite|0.4.3|
 |vroom|1.7.0|
 |waldo|0.6.2|

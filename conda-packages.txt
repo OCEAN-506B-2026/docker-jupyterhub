@@ -32,6 +32,10 @@ r-car
 r-cardata
 r-pwr
 r-effectsize
+r-factominer
+r-factoextra
+r-cluster
+r-dbscan
 r-vegan
 r-umap
 r-ggdendro
