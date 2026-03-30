@@ -227,7 +227,7 @@ jupyter-resource-usage==1.2.0
 └── pyzmq [required: >=19, installed: 27.1.0]
 jupyter-rsession-proxy==2.4.0
 └── jupyter_server_proxy [required: >4.1.0, installed: 4.4.0]
-    ├── aiohttp [required: Any, installed: 3.13.3]
+    ├── aiohttp [required: Any, installed: 3.13.4]
     │   ├── aiohappyeyeballs [required: >=2.5.0, installed: 2.6.1]
     │   ├── aiosignal [required: >=1.4.0, installed: 1.4.0]
     │   │   └── frozenlist [required: >=1.1.0, installed: 1.8.0]
@@ -2377,6 +2377,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |mvnfast|0.2.8|
 |mvtnorm|1.3-6|
 |nanonext|1.8.1|
+|ncdf4|1.24|
 |nlme|3.1-168|
 |nlmeU|0.71.7|
 |nloptr|2.2.1|

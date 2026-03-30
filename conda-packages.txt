@@ -17,6 +17,7 @@ xorg-libxfixes
 gdal
 r-base
 r-essentials
+r-ncdf4
 r-devtools
 r-tidyverse
 r-patchwork

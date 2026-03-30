@@ -16,8 +16,8 @@ COPY --chown=$NB_UID: apt.txt /home/jovyan/
 RUN apt-get update --fix-missing > /dev/null && \
     apt-get upgrade --yes && \
     xargs -a apt.txt apt-get install --yes && \    
-    curl --silent -L --fail wget https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2026.01.1-403-amd64.deb > /tmp/rstudio.deb && \
-    echo '293e6673cf5bdf8a66b2b00653bbf993a50ac5c006465363fcb5a5cb3152bcca  /tmp/rstudio.deb' | shasum -a 256 -c - && \
+    curl --silent -L --fail wget https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2026.01.2-418-amd64.deb > /tmp/rstudio.deb && \
+    echo 'd245670d783f8dade7e6d628b2a545b344e1c47874e23c3a011e1a6a1d8e8c30  /tmp/rstudio.deb' | shasum -a 256 -c - && \
     gdebi -n /tmp/rstudio.deb && \
     rm /tmp/rstudio.deb && \
     apt-get clean > /dev/null && \

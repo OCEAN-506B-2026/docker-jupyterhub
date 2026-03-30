@@ -5,6 +5,16 @@ All notable changes to the OCEAN 506B Jupyter Notebook image will be documented 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.5] - 2026-03-29
+
+### Added
+
+- Added r-ncdf4 to conda-packages.txt
+
+### Changed
+
+- Version of rstudio server updated to 2026.01.2-418
+
 ## [0.10.4] - 2026-03-26
 
 ### Added
