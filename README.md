@@ -11,7 +11,7 @@ Docker image for RStudio notebook using jupyter-rsession-proxy to handle auth fl
 
 ## Building the docker image
 
-To build the docker image from this repo. Use `docker buildx build --provenance=false --platform linux/amd64 --no-cache -t <repo-name>/<user-name>/ocean506b:v0.10.6 .`
+To build the docker image from this repo. Use `docker buildx build --provenance=false --platform linux/amd64 --no-cache -t <repo-name>/<user-name>/ocean506b:v0.10.7 .`
 
 ## About packages
 
@@ -84,7 +84,7 @@ isoduration==20.11.0
     ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
     │   └── six [required: >=1.5, installed: 1.17.0]
     └── tzdata [required: Any, installed: 2025.3]
-jupyter-resource-usage==1.2.0
+jupyter-resource-usage==1.2.1
 ├── jupyter_server [required: >=2.0, installed: 2.17.0]
 │   ├── anyio [required: >=3.1.0, installed: 4.12.1]
 │   │   └── idna [required: >=2.8, installed: 3.11]
@@ -226,8 +226,8 @@ jupyter-resource-usage==1.2.0
 ├── psutil [required: >=5.6, installed: 7.2.2]
 └── pyzmq [required: >=19, installed: 27.1.0]
 jupyter-rsession-proxy==2.4.0
-└── jupyter_server_proxy [required: >4.1.0, installed: 4.4.0]
-    ├── aiohttp [required: Any, installed: 3.13.4]
+└── jupyter_server_proxy [required: >4.1.0, installed: 4.5.0]
+    ├── aiohttp [required: Any, installed: 3.13.5]
     │   ├── aiohappyeyeballs [required: >=2.5.0, installed: 2.6.1]
     │   ├── aiosignal [required: >=1.4.0, installed: 1.4.0]
     │   │   └── frozenlist [required: >=1.1.0, installed: 1.8.0]
@@ -2181,6 +2181,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |alabama|2025.1.0|
 |anocva|0.1.1|
 |arm|1.15-2|
+|arrangements|1.1.10|
 |ARTool|0.11.2|
 |askpass|1.2.1|
 |assertthat|0.2.1|
@@ -2197,12 +2198,14 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |brew|1.0-10|
 |brio|1.1.5|
 |broom|1.0.12|
+|broom.mixed|0.2.9.7|
 |bslib|0.10.0|
 |cachem|1.1.0|
 |callr|3.7.6|
 |car|3.1-5|
 |carData|3.0-6|
 |caret|7.0-1|
+|caTools|1.18.3|
 |cellranger|1.1.0|
 |ciTools|0.6.1|
 |class|7.3-23|
@@ -2213,6 +2216,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |cluster|2.1.8.2|
 |coda|0.19-4.1|
 |codetools|0.2-20|
+|coin|1.4-3|
 |colorspace|2.1-2|
 |commonmark|2.0.0|
 |compiler|4.5.3|
@@ -2235,6 +2239,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |dbplyr|2.5.2|
 |dbscan|1.2.4|
 |dendextend|1.19.1|
+|DEoptimR|1.1-4|
 |Deriv|4.2.0|
 |desc|1.4.3|
 |devtools|2.5.0|
@@ -2259,6 +2264,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |emmeans|2.0.2|
 |estimability|1.5.1|
 |evaluate|1.0.5|
+|exactRankTests|0.8-36|
 |expm|1.0-0|
 |factoextra|2.0.0|
 |FactoMineR|2.13|
@@ -2298,6 +2304,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |glmnet|4.1-10|
 |globals|0.19.1|
 |glue|1.8.0|
+|gmp|0.7-5.1|
 |googledrive|2.1.2|
 |googlesheets4|1.1.2|
 |gower|1.0.2|
@@ -2331,6 +2338,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |isoband|0.3.0|
 |iterators|1.0.14|
 |janitor|2.2.1|
+|jomo|2.7-6|
 |jquerylib|0.1.4|
 |jsonlite|2.0.0|
 |KernSmooth|2.23-26|
@@ -2343,6 +2351,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |lazyeval|0.2.2|
 |leaps|3.2|
 |lhs|1.2.1|
+|libcoin|1.0-12|
 |lifecycle|1.0.5|
 |listenv|0.10.1|
 |lme4|1.1-38|
@@ -2357,22 +2366,32 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |Matrix|1.7-4|
 |MatrixModels|0.5-4|
 |matrixStats|1.5.0|
+|matrixTests|0.2.3.1|
 |mclust|6.1.2|
 |memoise|2.0.1|
 |merDeriv|0.2-5|
 |methods|4.5.3|
 |mgcv|1.9-4|
+|mice|3.19.0|
+|miceadds|3.19-16|
 |microbenchmark|1.5.0|
 |mime|0.13|
 |miniUI|0.1.2|
 |minqa|1.2.8|
 |mirai|2.6.1|
+|mitml|0.4-5|
+|mitools|2.4|
+|MKdescr|0.9|
+|MKinfer|1.3|
+|MKpower|1.1|
 |mnormt|2.1.2|
 |modeldata|1.5.1|
 |modelenv|0.2.0|
 |ModelMetrics|1.2.2.2|
 |modelr|0.1.11|
+|modeltools|0.2-24|
 |msm|1.8.2|
+|multcomp|1.4-30|
 |multcompView|0.1-11|
 |munsell|0.5.1|
 |mvnfast|0.2.8|
@@ -2383,14 +2402,17 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |nlmeU|0.71.7|
 |nloptr|2.2.1|
 |nnet|7.3-20|
-|nonnest2|0.5-8|
+|nonnest2|0.5-9|
 |npde|3.5|
 |numDeriv|2016.8-1.1|
 |nycflights13|1.0.2|
+|opdisDownsampling|1.0.1|
 |openssl|2.3.5|
+|ordinal|2025.12-29|
 |otel|0.2.0|
 |pak|0.9.2|
 |palmerpenguins|0.1.1|
+|pan|1.9|
 |parallel|4.5.3|
 |parallelly|1.46.1|
 |parameters|0.28.3|
@@ -2399,6 +2421,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |pbdZMQ|0.3-14|
 |pbivnorm|0.6.0|
 |pbkrtest|0.5.5|
+|pbmcapply|1.5.1|
 |performance|0.16.0|
 |permute|0.9-10|
 |pillar|1.11.1|
@@ -2411,6 +2434,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |plyr|1.8.9|
 |png|0.1-9|
 |polynom|1.4-1|
+|pracma|2.4.4|
 |praise|1.0.0|
 |prettycode|1.1.0|
 |prettyunits|1.2.0|
@@ -2426,6 +2450,8 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |ps|1.9.1|
 |purrr|1.2.1|
 |pwr|1.3-0|
+|qqconf|1.3.2|
+|qqplotr|0.0.7|
 |quadprog|1.5-8|
 |quantmod|0.4.28|
 |quantreg|6.1|
@@ -2457,6 +2483,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |rgl|1.3.36|
 |rlang|1.1.7|
 |rmarkdown|2.30|
+|robustbase|0.99-7|
 |RODBC|1.3-26.1|
 |roxygen2|7.3.3|
 |rpart|4.1.24|
@@ -2500,6 +2527,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |tcltk|4.5.3|
 |testthat|3.3.2|
 |textshaping|1.0.5|
+|TH.data|1.1-5|
 |tibble|3.3.1|
 |tidymodels|1.4.1|
 |tidyr|1.3.2|
@@ -2514,7 +2542,9 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |TTR|0.24.4|
 |tune|2.0.1|
 |tweedie|3.0.17|
+|twosamples|2.0.1|
 |tzdb|0.5.0|
+|ucminf|1.2.2|
 |umap|0.2.10.0|
 |urca|1.3-4|
 |urlchecker|1.0.1|

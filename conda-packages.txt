@@ -13,6 +13,11 @@ xorg-libxi
 xorg-libxmu
 xorg-libxrender
 xorg-libxfixes
+# r packages implicit dependences
+gmp
+fftw
+r-qqconf
+r-qqplotr
 # r packages
 gdal
 r-base
@@ -31,6 +36,7 @@ r-pkgdown
 r-boot
 r-car
 r-cardata
+r-e1071
 r-pwr
 r-effectsize
 r-factominer
