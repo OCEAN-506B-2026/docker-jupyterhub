@@ -39,6 +39,8 @@ r-cardata
 r-e1071
 r-pwr
 r-effectsize
+r-dunn.test
+r-emmeans
 r-factominer
 r-factoextra
 r-cluster

@@ -11,7 +11,7 @@ Docker image for RStudio notebook using jupyter-rsession-proxy to handle auth fl
 
 ## Building the docker image
 
-To build the docker image from this repo. Use `docker buildx build --provenance=false --platform linux/amd64 --no-cache -t <repo-name>/<user-name>/ocean506b:v0.10.7 .`
+To build the docker image from this repo. Use `docker buildx build --provenance=false --platform linux/amd64 --no-cache -t <repo-name>/<user-name>/ocean506b:v0.10.8 .`
 
 ## About packages
 
@@ -2256,6 +2256,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |dplyr|1.2.0|
 |DT|0.34.0|
 |dtplyr|1.3.3|
+|dunn.test|1.3.7|
 |e1071|1.7-17|
 |ecotox|1.4.4|
 |effectsize|1.0.2|
@@ -2544,7 +2545,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |tweedie|3.0.17|
 |twosamples|2.0.1|
 |tzdb|0.5.0|
-|ucminf|1.2.2|
+|ucminf|1.2.3|
 |umap|0.2.10.0|
 |urca|1.3-4|
 |urlchecker|1.0.1|
